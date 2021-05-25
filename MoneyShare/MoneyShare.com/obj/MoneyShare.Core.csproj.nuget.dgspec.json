@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Test\\test_hub\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {}
+    "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {}
   },
   "projects": {
-    "D:\\Test\\test_hub\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
+    "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Test\\test_hub\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+        "projectUniqueName": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
         "projectName": "MoneyShare.Core",
-        "projectPath": "D:\\Test\\test_hub\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+        "projectPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
         "packagesPath": "C:\\Users\\mkolomiiets\\.nuget\\packages\\",
-        "outputPath": "D:\\Test\\test_hub\\MoneyShare\\MoneyShare.com\\obj\\",
+        "outputPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mkolomiiets\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

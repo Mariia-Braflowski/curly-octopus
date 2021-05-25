@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zxjT6VV0m1Py0402lBAK5aZTKuvIxg85TQc9SIyhZfYSnHc0gw12tUF+jvpUoY+K/JhqIff3cGndTJQuSSbbng==",
+  "dgSpecHash": "InMuk+n1cxweeDBRGZnYf9j1oFK1tg2V++Guvypo75eKhd/7+11TTyr7pzW+AtNucckUqZ25lDGwZqizEpJfUQ==",
   "success": true,
-  "projectFilePath": "D:\\Test\\test_hub\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
+  "projectFilePath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mkolomiiets\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\mkolomiiets\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
