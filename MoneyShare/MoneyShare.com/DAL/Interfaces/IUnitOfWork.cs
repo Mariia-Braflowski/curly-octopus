@@ -1,4 +1,4 @@
-﻿using MoneyShare.Models;
+﻿using MoneyShare.Core.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;

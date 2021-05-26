@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using Microsoft.Extensions.Configuration;
-using MoneyShare.Context;
+using MoneyShare.Core.DAL.Context;
 
 namespace MoneyShare
 {
