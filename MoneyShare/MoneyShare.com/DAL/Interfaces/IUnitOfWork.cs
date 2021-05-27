@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MoneyShare.Core.DAL.Interfaces
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IRepository<Category> Categories { get; }
         IRepository<Record> Records { get; }

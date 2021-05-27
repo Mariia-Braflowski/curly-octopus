@@ -11,6 +11,10 @@ namespace MoneyShare.Core.DAL.Repositories
     class RecordRepository : IRepository<Record>
     {
         private ApplicationContext db;
+        public RecordRepository(ApplicationContext db)
+        {
+            this.db = db;
+        }
         public void Create(Record item)
         {
             db.Records.Add(item);

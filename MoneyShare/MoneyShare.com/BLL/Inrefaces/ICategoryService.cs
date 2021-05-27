@@ -1,15 +1,13 @@
-﻿using MoneyShare.Core.DAL.Models;
-using System;
+﻿using MoneyShare.Core.BLL.DTO;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MoneyShare.Core.BLL.Inrefaces
 {
     public interface ICategoryService
     {
-        public void CreateCategory(Category category);
-        public IEnumerable<Category> GetCategories();
-        public Category GetCategory(int id);
+        public void CreateCategory(CategoryDTO category);
+        public IEnumerable<CategoryDTO> GetCategories();
+        public CategoryDTO GetCategory(int id);
         void Dispose();
     }
 }

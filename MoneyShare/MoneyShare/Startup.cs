@@ -3,14 +3,16 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
+using MoneyShare.Core.DAL.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
+using MoneyShare.Core.DAL.Repositories;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 using Microsoft.Extensions.Configuration;
 using MoneyShare.Core.DAL.Context;
+using MoneyShare.Core.BLL.Inrefaces;
+using MoneyShare.Core.BLL.Services;
 
 namespace MoneyShare
 {
@@ -33,6 +35,12 @@ namespace MoneyShare
             services.AddDbContext<ApplicationContext> (options =>
                     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
                     );
+
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IRecordService, RecordService>();
+            //services.AddTransient<ICategoryService, CategoryService>();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

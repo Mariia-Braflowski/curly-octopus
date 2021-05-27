@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace MoneyShare.Core.BLL.DTO
+namespace MoneyShare.Models
 {
-    public class RecordDTO
+    public class RecordViewModel
     {
         public int RecordId { get; set; }
         public int CategoryId { get; set; }

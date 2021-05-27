@@ -1,32 +1,48 @@
-﻿@model IEnumerable<MobileStore.Models.Phone>
+﻿@model MoneyShare.Models.CategoryRecordViewModel
 @{
     //ViewData["Title"] = "Список смартфонов";
     Layout = null;
 }
 <!DOCTYPE html>
- 
+
 <html>
 <head>
     <title>TITLE</title>
+      <!-- Кодировка веб-страницы -->
+  <meta charset="utf-8">
+  <!-- Настройка viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </head>
 <body>
     <h3>Money share:</h3>
-    <table>
-        <tr>
-            <td>Модель</td>
-            <td>Производитель</td>
-            <td>Цена</td>
-            <td></td>
-        </tr>
-        @foreach (var phone in Model)
-            {
+    <a href="~/Home/CreateCategory">Create category</a>
+    <a href="~/Home/CreateRecord">Create record</a>
+    <table class="table">
+        <thead>
             <tr>
-                <td>@phone.Name</td>
-                <td>@phone.Company</td>
-                <td>@phone.Price</td>
-                <td><a href="~/Home/Buy/@phone.Id">Купить</a></td>
+                <th scope="col">#</th>
+                <th scope="col">Category</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Date</th>
+                <th scope="col"></th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var record in Model.recordViewModel)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@record.CategoryId</td>
+                    <td>@record.Amount</td>
+                    <td>@record.Date</th>
+                    <td><a href="~/Home/Buy/@record.RecordId">BUY</a></td>
+                </tr>
+            }
+        </tbody>
     </table>
 </body>
 </html>

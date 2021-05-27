@@ -11,7 +11,7 @@ namespace MoneyShare.Core.DAL.Context
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
-
+            
         }
 
         //static ApplicationContext()

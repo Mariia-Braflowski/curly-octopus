@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MoneyShare.Core.DAL.Repositories
 {
-    class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private ApplicationContext db;
         private CategoryRepository categoryRepository;
@@ -17,20 +17,20 @@ namespace MoneyShare.Core.DAL.Repositories
         private bool disposed = false;
 
 
-        public UnitOfWork(DbContextOptions<ApplicationContext> options)
+        public UnitOfWork(ApplicationContext appDb)
         {
-            db = new ApplicationContext(options);
+            db = appDb;
         }
         public IRepository<Category> Categories { get {
                 if (categoryRepository == null)
-                    categoryRepository = new CategoryRepository(); //ToDo: everytime new instance?
+                    categoryRepository = new CategoryRepository(db); //ToDo: everytime new instance?
                 return categoryRepository;
 
             } 
         }
         public IRepository<Record> Records { get {
                 if(recordRepository == null)
-                    recordRepository = new RecordRepository();
+                    recordRepository = new RecordRepository(db);
                 return recordRepository;
             } 
         }

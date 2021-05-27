@@ -1,0 +1,9 @@
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.deps.json
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.dll
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.pdb
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.csproj.AssemblyReference.cache
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.AssemblyInfoInputs.cache
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.AssemblyInfo.cs
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.csproj.CoreCompileInputs.cache
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.dll
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.pdb

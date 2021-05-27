@@ -11,6 +11,11 @@ namespace MoneyShare.Core.DAL.Repositories
     class CategoryRepository : IRepository<Category>
     {
         private ApplicationContext db;
+
+        public CategoryRepository(ApplicationContext db)
+        {
+            this.db = db;
+        }
         public void Create(Category item)
         {
             db.Categories.Add(item);

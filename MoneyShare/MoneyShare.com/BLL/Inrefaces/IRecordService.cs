@@ -1,15 +1,13 @@
-﻿using MoneyShare.Core.DAL.Models;
-using System;
+﻿using MoneyShare.Core.BLL.DTO;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MoneyShare.Core.BLL.Inrefaces
 {
     public interface IRecordService
     {
-        public void CreateRecord(Record recod);
-        public IEnumerable<Record> GetRecords();
-        public Record GetRecord(int id);
+        public void CreateRecord(RecordDTO recod);
+        public IEnumerable<RecordDTO> GetRecords();
+        public RecordDTO GetRecord(int id);
         void Dispose();
     }
 }
