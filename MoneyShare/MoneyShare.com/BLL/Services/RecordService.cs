@@ -20,13 +20,17 @@ namespace MoneyShare.Core.BLL.Services
         public void CreateRecord(RecordDTO record)
         {
             Record recordDB = Database.Records.Get(record.RecordId);
-            if(recordDB == null)
-                Database.Records.Create(new Record {
+            if (recordDB == null)
+            {
+                Database.Records.Create(new Record
+                {
                     RecordId = record.RecordId,
                     CategoryId = record.CategoryId,
                     Amount = record.Amount,
                     Date = record.Date
                 });
+                Database.Save();
+            }
         }
 
         public void Dispose()

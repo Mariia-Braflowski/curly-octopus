@@ -19,9 +19,22 @@ namespace MoneyShare.Core.BLL.Services
         public void CreateCategory(CategoryDTO category)
         {
             Category categoryDB = Database.Categories.Get(category.CategoryId);
-            if(categoryDB == null)
-                Database.Categories.Create(new Category { CategoryId = category.CategoryId, Title = category.Title, Color = category.Color,
-                    Icon = category.Icon, CategoryType = category.CategoryType });
+            if (categoryDB == null)
+            {
+                Database.Categories.Create(new Category
+                {
+                    Title = category.Title,
+                    Color = category.Color,
+                    Icon = category.Icon,
+                    CategoryType = category.CategoryType
+                });
+                Database.Save();
+            }
+        }
+
+        public void DeleteCategory(int id)
+        {
+            Database.Categories.Delete(id);
         }
 
         public void Dispose()

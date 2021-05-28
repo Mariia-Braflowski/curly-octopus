@@ -8,6 +8,7 @@ namespace MoneyShare.Core.BLL.Inrefaces
         public void CreateCategory(CategoryDTO category);
         public IEnumerable<CategoryDTO> GetCategories();
         public CategoryDTO GetCategory(int id);
+        public void DeleteCategory(int id);
         void Dispose();
     }
 }
