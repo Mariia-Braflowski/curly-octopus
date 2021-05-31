@@ -42,8 +42,8 @@
                 <td>@category.Icon</td>
                 <td>@category.CategoryType</td>
                 <td>
-                    <form>
-                        <input type="button" class="btn btn-warning" value="EDIT" onClick='location.href="/Home/Edit/@category.CategoryId"'>
+                    <form method="get" action="/Category/EditCategory/@category.CategoryId">
+                        <input type="submit" class="btn btn-warning" value="EDIT">
                     </form>
                 </td>
                 <td>

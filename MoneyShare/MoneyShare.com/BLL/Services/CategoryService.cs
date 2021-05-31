@@ -57,5 +57,12 @@ namespace MoneyShare.Core.BLL.Services
             var mapper = new Mapper(config);
             return mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDTO>>(repository.GetAll());
         }
+        public void UpdateCategory(CategoryDTO category)
+        {
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<CategoryDTO, Category> ());
+            var mapper = new Mapper(config);
+            Category cat = mapper.Map<CategoryDTO, Category>(category);
+            repository.Update(cat);
+        }
     }
 }

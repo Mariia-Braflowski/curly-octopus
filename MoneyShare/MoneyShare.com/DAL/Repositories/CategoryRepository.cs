@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using MoneyShare.Core.DAL.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using MoneyShare.Core.BLL.Infrastructure;
 
 namespace MoneyShare.Core.DAL.Repositories
 {
@@ -49,7 +50,16 @@ namespace MoneyShare.Core.DAL.Repositories
 
         public void Update(Category item)
         {
-            //db.Entry(item).State = EntityState.Modified; //ToDo: ?
+            Category cat = db.Categories.FirstOrDefault(c=> c.CategoryId == item.CategoryId);
+            if(cat == null) {
+                throw new ValidationException("Category", "Category not found");
+            }
+            cat.CategoryType = item.CategoryType;
+            cat.Color = item.Color;
+            cat.Icon = item.Icon;
+            cat.Title = item.Title;
+
+            db.SaveChanges();
         }
     }
 }

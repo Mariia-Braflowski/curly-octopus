@@ -30,7 +30,6 @@ namespace MoneyShare.Controllers
         public async Task<IActionResult> CreateCategory(CategoryDTO categoryViewModel)
         {
             categoryService.CreateCategory(categoryViewModel);
-
             return Redirect("~/Home/Index");
             //return View("Index",CRVM); --RETURNS POST!
         }
@@ -39,6 +38,19 @@ namespace MoneyShare.Controllers
         public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
             categoryService.DeleteCategory(id);
+            return Redirect("~/Home/Index");
+        }
+        [HttpGet]
+        public async Task<IActionResult> EditCategory([FromRoute] int id)
+        {
+            CategoryDTO cat = categoryService.GetCategory(id);
+            return View("~/Views/Category/Editing.cshtml", cat);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditCategory(CategoryDTO categoryViewModel)
+        {
+            categoryService.UpdateCategory(categoryViewModel);
             return Redirect("~/Home/Index");
         }
     }

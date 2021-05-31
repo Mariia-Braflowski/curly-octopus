@@ -1,0 +1,40 @@
+﻿@model MoneyShare.Core.BLL.DTO.CategoryDTO
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>EDITING</title>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form method="post">
+        <div class="mb-3">
+            <label for="1" class="form-label">Title</label>
+            <input name="Title" type="text" class="form-control" id="1" aria-describedby="emailHelp" value="@Model.Title">
+        </div>
+        <div class="mb-3">
+            <label for="2" class="form-label">Color</label>
+            <input name="Color" type="text" class="form-control" id="2" value="@Model.Color">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="3">Icon</label>
+            <input name="Icon" type="text" class="form-control" id="3" value="@Model.Icon">
+        </div>
+        <div class="mb-3">
+            <label class="form-check-label" for="4">Category type</label>
+            <input name="CategoryType" type="text" class="form-control" id="4" value="@Model.CategoryType">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+</html>
