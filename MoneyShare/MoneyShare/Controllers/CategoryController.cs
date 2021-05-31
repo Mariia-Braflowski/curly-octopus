@@ -44,12 +44,14 @@ namespace MoneyShare.Controllers
         public async Task<IActionResult> EditCategory([FromRoute] int id)
         {
             CategoryDTO cat = categoryService.GetCategory(id);
+            ViewBag.CategoryId = cat.CategoryId;
             return View("~/Views/Category/Editing.cshtml", cat);
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditCategory(CategoryDTO categoryViewModel)
+        public async Task<IActionResult> EditCategory(int id, CategoryDTO categoryViewModel)
         {
+            categoryViewModel.CategoryId = id;
             categoryService.UpdateCategory(categoryViewModel);
             return Redirect("~/Home/Index");
         }
