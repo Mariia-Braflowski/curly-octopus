@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace MoneyShare.Core.DAL.Repositories
 {
-    class CategoryRepository : IRepository<Category>
+    public class CategoryRepository : IRepository<Category>
     {
         private ApplicationContext db;
 
@@ -19,13 +19,17 @@ namespace MoneyShare.Core.DAL.Repositories
         public void Create(Category item)
         {
             db.Categories.Add(item);
+            db.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            Category category = db.Categories.Find(id);
+            Category category = db.Categories.FirstOrDefault(e=>e.CategoryId == id);
             if (category != null)
+            {
                 db.Categories.Remove(category);
+                db.SaveChanges();
+            }
         }
 
         public IEnumerable<Category> Find(Func<Category, bool> predicate)
@@ -35,18 +39,17 @@ namespace MoneyShare.Core.DAL.Repositories
 
         public Category Get(int id)
         {
-            return db.Categories.Find(id);
+            return db.Categories.FirstOrDefault(e=>e.CategoryId == id);
         }
 
         public IEnumerable<Category> GetAll()
         {
-            return db.Categories;
-            //return db.Categories.Include(o => o.CategoryId);
+            return db.Categories.ToList();
         }
 
         public void Update(Category item)
         {
-            db.Entry(item).State = EntityState.Modified; //ToDo: ?
+            //db.Entry(item).State = EntityState.Modified; //ToDo: ?
         }
     }
 }

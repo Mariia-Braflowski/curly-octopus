@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MoneyShare.Core.DAL.Repositories
 {
-    class RecordRepository : IRepository<Record>
+    public class RecordRepository : IRepository<Record>
     {
         private ApplicationContext db;
         public RecordRepository(ApplicationContext db)
@@ -18,13 +18,17 @@ namespace MoneyShare.Core.DAL.Repositories
         public void Create(Record item)
         {
             db.Records.Add(item);
+            db.SaveChanges();
         }
 
         public void Delete(int id)
         {
             Record record = db.Records.Find(id);
             if (record != null)
+            {
                 db.Records.Remove(record);
+                db.SaveChanges();
+            }
         }
 
         public IEnumerable<Record> Find(Func<Record, bool> predicate)

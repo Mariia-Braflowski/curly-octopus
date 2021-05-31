@@ -1,4 +1,4 @@
-﻿@model MoneyShare.Models.CategoryViewModel
+﻿@model MoneyShare.Core.BLL.DTO.RecordDTO
 @{
     Layout = null;
 }
@@ -19,20 +19,16 @@
 <body>
     <form method="post">
         <div class="mb-3">
-            <label for="1" class="form-label">Title</label>
-            <input name="Title" type="text" class="form-control" id="1" aria-describedby="emailHelp">
+            <label for="1" class="form-label">CategoryId</label>
+            <input name="CategoryId" type="text" class="form-control" id="1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="2" class="form-label">Color</label>
-            <input name="Color" type="text" class="form-control" id="2">
+            <label for="2" class="form-label">Amount</label>
+            <input name="Amount" type="text" class="form-control" id="2">
         </div>
         <div class="mb-3">
-            <label class="form-label" for="3">Icon</label>
-            <input name="Icon" type="text" class="form-control" id="3">
-        </div>
-        <div class="mb-3">
-            <label class="form-check-label" for="4">Category type</label>
-            <input name="CategoryType" type="text" class="form-control" id="4">
+            <label class="form-label" for="3">Date</label>
+            <input name="Date" type="text" class="form-control" id="3">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

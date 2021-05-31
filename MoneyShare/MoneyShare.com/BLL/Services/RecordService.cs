@@ -11,36 +11,30 @@ namespace MoneyShare.Core.BLL.Services
 {
     public class RecordService : IRecordService
     {
-        IUnitOfWork Database { get; set; }
+        private readonly IRepository<Record> repository;
 
-        public RecordService(IUnitOfWork uow)
+        public RecordService(IRepository<Record> repository)
         {
-            Database = uow;
+            this.repository = repository;
         }
         public void CreateRecord(RecordDTO record)
         {
-            Record recordDB = Database.Records.Get(record.RecordId);
+            Record recordDB = repository.Get(record.RecordId);
             if (recordDB == null)
             {
-                Database.Records.Create(new Record
+                repository.Create(new Record
                 {
                     RecordId = record.RecordId,
                     CategoryId = record.CategoryId,
                     Amount = record.Amount,
                     Date = record.Date
                 });
-                Database.Save();
             }
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
 
         public RecordDTO GetRecord(int id)
         {
-            Record record = Database.Records.Get(id);
+            Record record = repository.Get(id);
             if (record == null)
                 throw new ValidationException("Record", "Record not found");
             return new RecordDTO {
@@ -50,12 +44,16 @@ namespace MoneyShare.Core.BLL.Services
                 Date = record.Date
             };
         }
-
         public IEnumerable<RecordDTO> GetRecords()
         {
             var config = new MapperConfiguration(con => con.CreateMap<Record, RecordDTO>());
             var mapper = new Mapper(config);
-            return mapper.Map<IEnumerable<Record>,IEnumerable<RecordDTO>>(Database.Records.GetAll());
+            return mapper.Map<IEnumerable<Record>, IEnumerable<RecordDTO>>(new List<Record> { });//return mapper.Map<IEnumerable<Record>,IEnumerable<RecordDTO>>(Database.Records.GetAll());
         }
+        public void DeleteRecord(int id)
+        {
+            repository.Delete(id);
+        }
+
     }
 }

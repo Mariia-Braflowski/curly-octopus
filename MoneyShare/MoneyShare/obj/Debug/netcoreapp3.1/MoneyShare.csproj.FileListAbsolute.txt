@@ -152,4 +152,5 @@ C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\De
 C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.dll
 C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.pdb
 C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.genruntimeconfig.cache
-C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\CRUD\CreatingCategory.cshtml.g.cs
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Category\Creating.cshtml.g.cs
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Record\Creating.cshtml.g.cs

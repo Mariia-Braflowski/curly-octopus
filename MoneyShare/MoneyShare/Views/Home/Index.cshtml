@@ -19,8 +19,8 @@
 </head>
 <body>
     <h3>Money share:</h3>
-    <a href="~/Home/CreateCategory"><button type="button" class="btn btn-success">Create category</button></a>
-    <a href="~/Home/CreateRecord"><button type="button" class="btn btn-primary">Create record</button></a>
+    <a href="~/Category/CreateCategory"><button type="button" class="btn btn-success">Create category</button></a>
+    <a href="~/Record/CreateRecord"><button type="button" class="btn btn-primary">Create record</button></a>
     <table class="table">
         <thead>
             <tr>
@@ -43,13 +43,16 @@
                 <td>@category.CategoryType</td>
                 <td>
                     <form>
-                        <input type="button" class="btn btn-warning" value="EDIT" onClick='location.href="~/Home/Edit/@category.CategoryId"'>
+                        <input type="button" class="btn btn-warning" value="EDIT" onClick='location.href="/Home/Edit/@category.CategoryId"'>
                     </form>
                 </td>
                 <td>
-                    <form asp-action="DeleteCategory" asp-controller="Home">
-                        <input type="submit" value="Delete" />
+                    <form method="post" action="/Category/DeleteCategory/@category.CategoryId">
+                        <input type="submit" class="btn btn-warning" value="DELETE">
                     </form>
+                    @*<form asp-action="DeleteCategory" asp-controller="Home">
+            <input type="submit" value="Delete" />
+        </form>*@
                 </td>
             </tr>
             }

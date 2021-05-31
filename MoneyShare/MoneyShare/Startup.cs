@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MoneyShare.Core.DAL.Interfaces;
-using System.Collections.Generic;
+using MoneyShare.Core.DAL.Models;
 using MoneyShare.Core.DAL.Repositories;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -36,10 +36,12 @@ namespace MoneyShare
                     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
                     );
 
+            services.AddTransient<IRepository<Category>, CategoryRepository>();
+            services.AddTransient<IRepository<Record>, RecordRepository>();
+
             services.AddTransient<ICategoryService, CategoryService>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IRecordService, RecordService>();
-            //services.AddTransient<ICategoryService, CategoryService>();
+
             services.AddControllersWithViews();
         }
 

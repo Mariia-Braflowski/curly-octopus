@@ -9,6 +9,5 @@ namespace MoneyShare.Core.BLL.Inrefaces
         public IEnumerable<CategoryDTO> GetCategories();
         public CategoryDTO GetCategory(int id);
         public void DeleteCategory(int id);
-        void Dispose();
     }
 }

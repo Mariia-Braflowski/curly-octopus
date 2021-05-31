@@ -8,6 +8,6 @@ namespace MoneyShare.Core.BLL.Inrefaces
         public void CreateRecord(RecordDTO recod);
         public IEnumerable<RecordDTO> GetRecords();
         public RecordDTO GetRecord(int id);
-        void Dispose();
+        public void DeleteRecord(int id);
     }
 }
