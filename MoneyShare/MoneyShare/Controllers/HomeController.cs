@@ -19,12 +19,12 @@ namespace MoneyShare.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            IEnumerable<CategoryDTO> categoriesDTO = categoryService.GetCategories();
-            IEnumerable<RecordDTO> recordsDTO = recordService.GetRecords();
+            //IEnumerable<CategoryDTO> categoriesDTO = categoryService.GetCategories();
+            //IEnumerable<RecordDTO> recordsDTO = recordService.GetRecords();
 
-            CategoryRecordViewModel CRVM = new CategoryRecordViewModel { categoryViewModel = categoriesDTO, recordViewModel = recordsDTO };
+            //CategoryRecordViewModel CRVM = new CategoryRecordViewModel { categoryViewModel = categoriesDTO, recordViewModel = recordsDTO };
 
-            return View(CRVM);
+            return View();
         }
     }
 }

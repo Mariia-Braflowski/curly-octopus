@@ -699,19 +699,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maria\\.nuget\\packages\\": {}
+    "C:\\Users\\mkolomiiets\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+      "projectUniqueName": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
       "projectName": "MoneyShare.Core",
-      "projectPath": "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
-      "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-      "outputPath": "E:\\petProject\\MoneyShare\\MoneyShare.com\\obj\\",
+      "projectPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+      "packagesPath": "C:\\Users\\mkolomiiets\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mkolomiiets\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -719,6 +719,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\newNuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -761,7 +762,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

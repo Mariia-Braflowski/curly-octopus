@@ -1,0 +1,61 @@
+﻿@model MoneyShare.Models.CategoryRecordViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>TITLE</title>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3>Money share:</h3>
+    <a href="~/Category/CreateCategory"><button type="button" class="btn btn-success">Create category</button></a>
+    <a href="~/Record/CreateRecord"><button type="button" class="btn btn-primary">Create record</button></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Color</th>
+                <th scope="col">Icon</th>
+                <th scope="col">Category type</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.categoryViewModel)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@category.Title</td>
+                    <td>@category.Color</td>
+                    <td>@category.Icon</td>
+                    <td>@category.CategoryType</td>
+                    <td>
+                        <form method="get" action="/Category/EditCategory/@category.CategoryId">
+                            <input type="submit" class="btn btn-warning" value="EDIT">
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="/Category/DeleteCategory/@category.CategoryId">
+                            <input type="submit" class="btn btn-warning" value="DELETE">
+                        </form>
+                        @*<form asp-action="DeleteCategory" asp-controller="Home">
+                                <input type="submit" value="Delete" />
+                            </form>*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

@@ -237,3 +237,5 @@ E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.csproj.Co
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.dll
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.pdb
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.genruntimeconfig.cache
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Record\Editing.cshtml.g.cs
