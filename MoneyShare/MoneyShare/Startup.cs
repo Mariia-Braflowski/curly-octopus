@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using MoneyShare.Core.DAL.Context;
 using MoneyShare.Core.BLL.Inrefaces;
 using MoneyShare.Core.BLL.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace MoneyShare
 {
@@ -36,6 +37,12 @@ namespace MoneyShare
                     options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
                     );
 
+            services.AddDbContext<IdentityContext>(options =>
+                  options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
+                   );
+
+            services.AddIdentity<User, IdentityRole>().AddEntityFrameworkStores<IdentityContext>();
+
             services.AddTransient<IRepository<Category>, CategoryRepository>();
             services.AddTransient<IRepository<Record>, RecordRepository>();
 
@@ -52,6 +59,9 @@ namespace MoneyShare
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseRouting();   
 
