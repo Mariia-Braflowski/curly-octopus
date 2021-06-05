@@ -1,0 +1,8 @@
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.csprojAssemblyReference.cache
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.GeneratedMSBuildEditorConfig.editorconfig
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.AssemblyInfoInputs.cache
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.AssemblyInfo.cs
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.csproj.CoreCompileInputs.cache
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.MvcApplicationPartsAssemblyInfo.cache
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.RazorAssemblyInfo.cache
+E:\petProject\MoneyShare\AuthenticationAuthorization\obj\Debug\net5.0\AuthenticationAuthorization.RazorAssemblyInfo.cs

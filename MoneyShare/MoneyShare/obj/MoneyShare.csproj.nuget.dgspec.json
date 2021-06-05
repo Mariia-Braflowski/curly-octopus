@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\MoneyShare.csproj": {}
+    "E:\\petProject\\MoneyShare\\MoneyShare\\MoneyShare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
+    "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+        "projectUniqueName": "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
         "projectName": "MoneyShare.Core",
-        "projectPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
-        "packagesPath": "C:\\Users\\mkolomiiets\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\obj\\",
+        "projectPath": "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "E:\\petProject\\MoneyShare\\MoneyShare.com\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mkolomiiets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\newNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,9 +44,9 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
-            "Microsoft.AspNet.Identity.EntityFramework": {
+            "EntityFramework": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[6.4.4, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -57,9 +56,25 @@
               "target": "Package",
               "version": "[5.0.6, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -77,21 +92,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\MoneyShare.csproj": {
+    "E:\\petProject\\MoneyShare\\MoneyShare\\MoneyShare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
+        "projectUniqueName": "E:\\petProject\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
         "projectName": "MoneyShare",
-        "projectPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
-        "packagesPath": "C:\\Users\\mkolomiiets\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare\\obj\\",
+        "projectPath": "E:\\petProject\\MoneyShare\\MoneyShare\\MoneyShare.csproj",
+        "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
+        "outputPath": "E:\\petProject\\MoneyShare\\MoneyShare\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mkolomiiets\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,15 +114,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\newNuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
-                "projectPath": "C:\\Users\\mkolomiiets\\Documents\\GitHub\\curly-octopus\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj"
+              "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj": {
+                "projectPath": "E:\\petProject\\MoneyShare\\MoneyShare.com\\MoneyShare.Core.csproj"
               }
             }
           }
@@ -126,11 +140,21 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"
             },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.6, )"
             },
@@ -161,7 +185,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

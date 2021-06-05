@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MoneyShare.Core.BLL.Inrefaces;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using MoneyShare.Core.BLL.DTO;
-using AutoMapper;
-using MoneyShare.Models;
 
 namespace MoneyShare.Controllers
 {
@@ -19,12 +15,20 @@ namespace MoneyShare.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return View();
+            }
+            else
+            {
+                return View("~/Views/Account/Register.cshtml");
+            }
             //IEnumerable<CategoryDTO> categoriesDTO = categoryService.GetCategories();
             //IEnumerable<RecordDTO> recordsDTO = recordService.GetRecords();
 
             //CategoryRecordViewModel CRVM = new CategoryRecordViewModel { categoryViewModel = categoriesDTO, recordViewModel = recordsDTO };
 
-            return View();
+           
         }
     }
 }

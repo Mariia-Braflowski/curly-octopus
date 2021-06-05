@@ -8,11 +8,13 @@ C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\ob
 C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.dll
 C:\Users\mkolomiiets\Documents\GitHub\curly-octopus\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.pdb
 E:\petProject\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.deps.json
+E:\petProject\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.runtimeconfig.json
+E:\petProject\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.runtimeconfig.dev.json
 E:\petProject\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.dll
 E:\petProject\MoneyShare\MoneyShare.com\bin\Debug\netcoreapp3.1\MoneyShare.Core.pdb
-E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.csprojAssemblyReference.cache
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.AssemblyInfoInputs.cache
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.AssemblyInfo.cs
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.csproj.CoreCompileInputs.cache
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.dll
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.pdb
+E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.genruntimeconfig.cache
