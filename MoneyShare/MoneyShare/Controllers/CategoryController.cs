@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MoneyShare.Core.BLL.DTO;
 using MoneyShare.Core.BLL.Inrefaces;
@@ -24,12 +25,13 @@ namespace MoneyShare.Controllers
             return View(CRVM);
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> CreateCategory()
         {
             return View("~/Views/Category/Creating.cshtml");
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CreateCategory(CategoryDTO categoryViewModel)
         {
@@ -38,12 +40,14 @@ namespace MoneyShare.Controllers
             //return View("Index",CRVM); --RETURNS POST!
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
             categoryService.DeleteCategory(id);
             return Redirect("~/Category/Index");
         }
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> EditCategory([FromRoute] int id)
         {
@@ -52,6 +56,7 @@ namespace MoneyShare.Controllers
             return View("~/Views/Category/Editing.cshtml", cat);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> EditCategory(CategoryDTO categoryViewModel)
         {

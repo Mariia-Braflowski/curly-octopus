@@ -1,0 +1,17 @@
+﻿@model MoneyShare.Models.LoginViewModel
+
+<h2>Enter</h2>
+<form method="post" asp-controller="Account" asp-action="LogIn">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div>
+        <label for="1" class="form-label">Email</label>
+        <input name="Email" type="text" class="form-control" id="1">
+    </div>
+    <div>
+        <label for="2" class="form-label">Password</label>
+        <input name="Password" type="text" class="form-control" id="2">
+    </div>
+    <div>
+        <input type="submit" value="LogIn" />
+    </div>
+</form>

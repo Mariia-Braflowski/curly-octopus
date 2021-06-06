@@ -49,7 +49,7 @@ namespace MoneyShare.Controllers
         [HttpGet]
         public async Task<IActionResult> LogIn()
         {
-            return View("");
+            return View();
         }
        
         [HttpPost]
@@ -79,6 +79,16 @@ namespace MoneyShare.Controllers
             ModelState.AddModelError("", "ХЗ");
             return View("","HZ");
 
+        }
+
+
+        //[ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            // удаляем аутентификационные куки
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

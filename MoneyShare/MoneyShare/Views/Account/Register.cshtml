@@ -1,5 +1,5 @@
 ﻿@model MoneyShare.Models.RegisterViewModel
-<h2>Регистрация нового пользователя</h2>
+<h2>Register new user</h2>
 <form method="post" asp-controller="Account" asp-action="Register">
     <div asp-validation-summary="ModelOnly"></div>
     <div>
@@ -9,9 +9,6 @@
     <div>
         <label for="2" class="form-label">Password</label>
         <input name="Password" type="text" class="form-control" id="2">
-        @*<label asp-for="Password">Password</label><br />
-        <input asp-for="Password" />
-        <span asp-validation-for="Password"></span>*@
     </div>
     <div>
         <label for="3" class="form-label">PasswordConfirm</label>
@@ -21,3 +18,7 @@
         <input type="submit" value="Register" />
     </div>
 </form>
+
+@*<label asp-for="Password">Password</label><br />
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>*@

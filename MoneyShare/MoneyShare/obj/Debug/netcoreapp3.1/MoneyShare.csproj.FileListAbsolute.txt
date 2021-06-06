@@ -254,3 +254,5 @@ E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.csproj.Co
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.dll
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.pdb
 E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\MoneyShare.genruntimeconfig.cache
+E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+E:\petProject\MoneyShare\MoneyShare\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Layout.cshtml.g.cs

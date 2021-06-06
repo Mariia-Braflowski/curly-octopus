@@ -15,14 +15,14 @@ namespace MoneyShare.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            if (User.Identity.IsAuthenticated)
-            {
+            //if (User.Identity.IsAuthenticated)
+            //{
                 return View();
-            }
-            else
-            {
-                return View("~/Views/Account/Register.cshtml");
-            }
+            //}
+            //else
+           //{
+             //   return Redirect("~/Account/Login");
+           //}
             //IEnumerable<CategoryDTO> categoriesDTO = categoryService.GetCategories();
             //IEnumerable<RecordDTO> recordsDTO = recordService.GetRecords();
 

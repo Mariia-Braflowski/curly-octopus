@@ -18,3 +18,4 @@ E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.dll
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.pdb
 E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.genruntimeconfig.cache
+E:\petProject\MoneyShare\MoneyShare.com\obj\Debug\netcoreapp3.1\MoneyShare.Core.csprojAssemblyReference.cache

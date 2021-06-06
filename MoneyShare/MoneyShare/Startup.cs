@@ -14,6 +14,7 @@ using MoneyShare.Core.DAL.Context;
 using MoneyShare.Core.BLL.Inrefaces;
 using MoneyShare.Core.BLL.Services;
 using Microsoft.AspNetCore.Identity;
+using System;
 
 namespace MoneyShare
 {
@@ -40,7 +41,12 @@ namespace MoneyShare
             services.AddDbContext<IdentityContext>(options =>
                   options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))
                    );
-
+            //// установка конфигурации подключения
+            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            //        .AddCookie(options => //CookieAuthenticationOptions
+            //        {
+            //            options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/Login");
+            //        });
             services.AddIdentity<User, IdentityRole>(opts => {
                 opts.Password.RequiredLength = 5;   // минимальная длина
                 opts.Password.RequireNonAlphanumeric = false;   // требуются ли не алфавитно-цифровые символы
@@ -65,11 +71,11 @@ namespace MoneyShare
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
-
-            app.UseRouting();   
 
             app.UseEndpoints(endpoints =>
             {
@@ -84,6 +90,7 @@ namespace MoneyShare
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Money share");
             });
+            Console.WriteLine("!!!!!!!!!END END END END END END END req!!!!!!!!!!!!!!!");
         }
     }
 }

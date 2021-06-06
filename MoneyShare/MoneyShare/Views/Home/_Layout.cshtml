@@ -1,0 +1,13 @@
+﻿@if (User.Identity.IsAuthenticated)
+{
+    <p>@User.Identity.Name</p>
+    <form method="post" action="~/Account/Logout">
+        <input name="Email" type="submit" value="Logout" id="1" />
+    </form>
+}
+else
+{
+    <a href="~/Account/LogIn"><button type="button" class="btn btn-secondary">LogIn</button></a>
+    <a href="~/Account/Register"><button type="button" class="btn btn-secondary">Register</button></a>
+}
+@RenderBody()
